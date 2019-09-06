@@ -26,30 +26,41 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+    Routes, Middleware
+
 - [ ] Describe Middleware?
+
+    A function that can be injected into express routes. Can be utilized to process/change the information sent back form the server.
 
 - [ ] Describe a Resource?
 
+    A resource is information sent back from the server that the cliente can utilize/manipulate.
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+    The API should send a 200 code - this lets the cliente know that it was a successful request.
+
 - [ ] How can we partition our application into sub-applications?
+
+    Via routing the dev can seperate code into different sections - much like
+    components in React.js
 
 ## Project Setup
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your _Project Manager_ as collaborator on Github.
-- [ ] Clone your forked version of the Repository.
-- [ ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on this Branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [-] Create a forked copy of this project.
+- [-] Add your _Project Manager_ as collaborator on Github.
+- [-] Clone your forked version of the Repository.
+- [-] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
+- [-] Implement the project on this Branch, committing changes regularly.
+- [-] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master on your fork. **Please don't merge your own pull request.**
-- [ ] Add your _Project Manager_ as a Reviewer on the Pull-request
-- [ ] Your _Project Manager_ will count the challenge as done by merging the branch into _master_.
+- [-] Submit a Pull-Request to merge <firstName-lastName> Branch into master on your fork. **Please don't merge your own pull request.**
+- [-] Add your _Project Manager_ as a Reviewer on the Pull-request
+- [-] Your _Project Manager_ will count the challenge as done by merging the branch into _master_.
 
 ## Database Persistence Helpers
 
@@ -57,7 +68,7 @@ Please read the following before implementing the Minimum Viable Product:
 
 The `/data/helpers` folder includes files you can use to manage the persistence of _project_ and _action_ data. These files are `projectModel.js` and `actionModel.js`. Both files publish the following api, which you can use to store, modify and retrieve each resource:
 
-**All these helper methods return a promise. Please you .then().catch() or async/await**
+**All these helper methods return a promise. Please use .then().catch() or async/await**
 
 - `get()`: calling get returns an array of all the resources contained in the database. If you pass an `id` to this method it will return the resource with that id if one is found.
 - `insert()`: calling insert passing it a resource object will add it to the database and return the newly created resource.
@@ -68,8 +79,8 @@ The `projectModel.js` helper includes an extra method called `getProjectActions(
 
 ## Minimum Viable Product
 
-- [ ] Configure an _npm script_ named _"server"_ that will execute your code using _nodemon_. Make _nodemon_ be a development time dependency only, it shouldn't be deployed to production.
-- [ ] Configure an _npm script_ named _"start"_ that will execute your code using _node_.
+- [-] Configure an _npm script_ named _"server"_ that will execute your code using _nodemon_. Make _nodemon_ be a development time dependency only, it shouldn't be deployed to production.
+- [-] Configure an _npm script_ named _"start"_ that will execute your code using _node_.
 
 Design and build the necessary endpoints to:
 
