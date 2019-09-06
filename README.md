@@ -26,13 +26,24 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+    Routes, Middleware
+
 - [ ] Describe Middleware?
+
+    A function that can be injected into express routes. Can be utilized to process/change the information sent back form the server.
 
 - [ ] Describe a Resource?
 
+    A resource is information sent back from the server that the cliente can utilize/manipulate.
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+    The API should send a 200 code - this lets the cliente know that it was a successful request.
+
 - [ ] How can we partition our application into sub-applications?
+
+    Via routing the dev can seperate code into different sections - much like
+    components in React.js
 
 ## Project Setup
 
