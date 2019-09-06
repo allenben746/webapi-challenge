@@ -5,6 +5,8 @@ server.use(express.json());
 server.use(logger);
 
 //Routes
+const projectsRouter = require("./projects/projectsRouter");
+const actionsRouter = require("./actions/actionsRouter");
 server.use('/projects', projectsRouter)
 server.use('/actions', actionsRouter)
 //Sanity test
